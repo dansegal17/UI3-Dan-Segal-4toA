@@ -11,15 +11,18 @@ using UnityEngine.UI;
 
 public class LoginManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public InputField Input_PssWrd;
+    public string PssWrd;
 
-    // Update is called once per frame
-    void Update()
+    public void PasswordInput()
     {
-        
+        if (Input_PssWrd.text == PssWrd)
+        {
+            Debug.Log("Access Guaranted");
+        }
+        else
+        {
+            Debug.Log("Access Denied");
+        }
     }
 }
